@@ -1,0 +1,14 @@
+```{r}
+peso <-  c(160:184)
+mes<- c("enero","febrero","marzo","abril","mayo")
+nombres <- c("Ana","Juan","Felipe","Julio","Pedro")
+matriz <-matrix(peso,byrow=TRUE,nrow=5)
+colnames(matriz)<-(mes)
+rownames(matriz)<-(nombres)
+promrow <- rowMeans(matriz)
+matriz1 <- cbind(matriz,promrow)
+matriz1
+promcol <- colMeans(matriz1)
+matriz2 <- rbind(matriz1,promcol)
+matriz2
+```
